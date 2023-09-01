@@ -1,0 +1,1428 @@
+if game.PlaceId == 2753915549 then
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "ĐúngHub", HidePremium = false, IntroText = "Đúng Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+    
+     
+    local ShopTab = Window:MakeTab({
+        Name = "Shop",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local Section = ShopTab:AddSection({
+        Name = "Main"
+    })
+        ShopTab:AddButton({
+            Name = "Reddem Code",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        ShopTab:AddButton({
+            Name = "Teleport Old World",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        ShopTab:AddButton({
+            Name = "Teleport New World",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        ShopTab:AddButton({
+            Name = "Teleport Third Sea",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        local Section = ShopTab:AddSection({
+            Name = "Fighting Shop"
+        })
+        ShopTab:AddButton({
+            Name = "SuperHuman",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        ShopTab:AddButton({
+            Name = "DeathStep",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        ShopTab:AddButton({
+            Name = "SharkmanKarate",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        ShopTab:AddButton({
+            Name = "Electric Claw",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        ShopTab:AddButton({
+            Name = "Dragon Talon",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        ShopTab:AddButton({
+            Name = "GodHuman",
+            Callback = function(Value)
+                print(Value)
+            end  
+        })
+            local Section = ShopTab:AddSection({
+                Name = "Abilities Shop"
+            })
+        
+        ShopTab:AddButton({
+            Name = "Skyjump [$10,000 Beli]",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        ShopTab:AddButton({
+            Name = "Buso Haki [$25,000 Beli]",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        ShopTab:AddButton({
+            Name = "Observation haki [$750,000 Beli]",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        ShopTab:AddButton({
+            Name = "Soru [$100,000 Beli]",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        local Section = ShopTab:AddSection({
+            Name = "Mics"
+        })
+        ShopTab:AddButton({
+            Name = "Reroll Race",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+        ShopTab:AddButton({
+            Name = "Reset Stats",
+            Callback = function(Value)
+                print(Value)
+            end    
+        })
+
+
+    local MainTab = Window:MakeTab({
+        Name = "Main",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local Section = MainTab:AddSection({
+        Name = "Setting Farm"
+    })
+    MainTab:AddDropdown({
+        Name = "Select Weapon",
+        Default = "1",
+        Options = {"Melee", "Blox Fruit", "Sword"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Auto Buso",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Auto Turn On Haki Observation",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Get Quest Farm [Katakuri Or Bone]",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Double Quest",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Reset Teleport[Not Use Get Item Or ...]",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Auto Dodge Skill Mobs",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Auto Turn On Race v4",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Bring Mob",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Fast Attack",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Auto Click[ Risk ]",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddDropdown({
+        Name = "Select Speed Attack",
+        Default = "1",
+        Options = {"Super Fast Attack", "0", "0.1", "0.15", "0.2", "0.25", "0.3"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    local Section = MainTab:AddSection({
+        Name = "Farm Main"
+    })
+    MainTab:AddDropdown({
+        Name = "Select Method Farm",
+        Default = "1",
+        Options = {"Level Farm", "Farm Bones", "Farm Katakuri"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Auto Farm",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Auto New World",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Auto Third Sea",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Auto Mastery",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddDropdown({
+        Name = "Select Method Mastery",
+        Default = "1",
+        Options = {"Blox Fruit", "Gun"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddSlider({
+        Name = "% Health Mob",
+        Min = 0,
+        Max = 100,
+        Default = 5,
+        Color = Color3.fromRGB(255,255,255),
+        Increment = 1,
+        ValueName = "health mob",
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Use Skill Z",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Use Skill X",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+
+    MainTab:AddToggle({
+        Name = "Use Skill C",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+
+    MainTab:AddToggle({
+        Name = "Use Skill V",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+
+    MainTab:AddToggle({
+        Name = "Use Skill F",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    local Section = MainTab:AddSection({
+        Name = "Farm Main"
+    })
+    MainTab:AddToggle({
+        Name = "Auto Factory [ Bug ]",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Elite Hunter",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Raid Castle",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    local Section = MainTab:AddSection({
+        Name = "Get Melee"
+    })
+    MainTab:AddToggle({
+        Name = "SuperHuman",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "DeathStep",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "SharkmanKarate",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Electric Claw",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "Dragon Talon",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MainTab:AddToggle({
+        Name = "GodHuman",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+
+
+
+    local LocalTab = Window:MakeTab({
+        Name = "Local Player",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local Section = LocalTab:AddSection({
+        Name = "Main"
+    })
+    LocalTab:AddButton({
+        Name = "Open Devil Fruit Shop",
+        Callback = function()
+                  print("button pressed")
+          end    
+    })
+    LocalTab:AddButton({
+        Name = "Open Title",
+        Callback = function()
+                  print("button pressed")
+          end    
+    })
+    LocalTab:AddButton({
+        Name = "Open Color",
+        Callback = function()
+                  print("button pressed")
+          end    
+    })
+    LocalTab:AddDropdown({
+        Name = "Select Team",
+        Default = "Marine",
+        Options = {"Marine", "Pirate"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    LocalTab:AddToggle({
+        Name = "White Screen",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    LocalTab:AddToggle({
+        Name = "Auto rejoin Disconnect",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    LocalTab:AddButton({
+        Name = "Boost FPS",
+        Callback = function()
+                  print("button pressed")
+          end    
+    })
+    LocalTab:AddDropdown({
+        Name = "Select Island",
+        Default = "",
+        Options = {"Jungle", "Pirate Village", "UnderWater City", "Desert", "Sky 2st Floor", "Fountain City", "Marine Start", "Colosseum", "Frozen Village", "Shank's Room", "Start Island", "Sky 1st Floor", "Sky 3st Floor", "Magma Village", "Mob Island", "House Cyborg's", "Prison", "Middle Town", "MarineFord"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    LocalTab:AddToggle({
+        Name = "Teleport Island",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    LocalTab:AddToggle({
+        Name = "Teleport Mirage",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    local Section = LocalTab:AddSection({
+        Name = "Stats"
+    })
+    LocalTab:AddToggle({
+        Name = "Melee",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    LocalTab:AddToggle({
+        Name = "Defense",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    LocalTab:AddToggle({
+        Name = "Sword",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    LocalTab:AddToggle({
+        Name = "Gun",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    LocalTab:AddToggle({
+        Name = "Demon Fruit",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    local RaidTab = Window:MakeTab({
+        Name = "DF And Raid",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local Section = RaidTab:AddSection({
+        Name = "Devil Fruit"
+    })
+    RaidTab:AddToggle({
+        Name = "Buy Random DF",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    RaidTab:AddToggle({
+        Name = "Esp Fruit",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    RaidTab:AddToggle({
+        Name = "Find DF",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    RaidTab:AddToggle({
+        Name = "Hop Find DF",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end    
+    })
+    RaidTab:AddToggle({
+        Name = "Auto Store",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end    
+    })
+    RaidTab:AddDropdown({
+        Name = "Blox Fruit Sniper Shop",
+        Default = "1",
+        Options = {"Kilo-Kilo", "Spin-Spin", "Chop-Chop", "Spring-Spring", "Bomb-Bomb", "Smoke-Smoke", "Spike-Spike", "Flame-Flame", "Falcon-Falcon", "Ice-Ice", "Sand-Sand", "Dark-Dark", "Revive-Revive", "Diamond-Diamond", "Light-Light", "Rubber-Rubber", "Barrier-Barrier", "Magma-Magma", "Quake-Quake", "Buddha-Buddha", "Love-Love", "Spider-Spider", "Phoenix-Phoenix", "Portal-Portal", "Rumble-Rumble", "Paw-Paw", "Blizzard-Blizzard", "Gravity-Gravity", "Dough-Dough", "Shadow-Shadow", "Venom-Venom", "Control-Control", "Spirit-Spirit", "Dragon-Dragon", "Leopard-Leopard"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    RaidTab:AddLabel("Fruit Select:")
+    RaidTab:AddToggle({
+        Name = "Buy Blox Fruit Sniper Shop",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    local Section = RaidTab:AddSection({
+        Name = "Raids And Awaken"
+    })
+    RaidTab:AddDropdown({
+        Name = "Select Raid",
+        Default = "1",
+        Options = {"Phoenix", "Dough", "Flame", "Ice", "Quake", "Light", "Dark", "Spider", "Rumble", "Magma", "Buddha", "Sand"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    RaidTab:AddToggle({
+        Name = "Get Fruit In Store Low Beli",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaidTab:AddToggle({
+        Name = "Auto Buy Chip",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaidTab:AddToggle({
+        Name = "Auto Start Raid",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaidTab:AddToggle({
+        Name = "Auto Next Island",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaidTab:AddToggle({
+        Name = "Kill Aura Mob",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaidTab:AddToggle({
+        Name = "Auto Awaken",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaidTab:AddToggle({
+        Name = "Auto Raid and Find DF [ Hop ]",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+
+
+    local StatusTab = Window:MakeTab({
+        Name = "Status And Server",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local Section = StatusTab:AddSection({
+        Name = "Status"
+    })
+    StatusTab:AddLabel("Time: | Hour: 0 | Minute: 0 | Second: 0 |")
+    StatusTab:AddLabel("Elite Mob: ❌")
+    StatusTab:AddLabel("Summon Katakuri:500 Mobs")
+    StatusTab:AddLabel("Mirage Island: ❌")
+    StatusTab:AddLabel("Moon : BadMoon|22")
+    StatusTab:AddLabel("Acient One Status : You have yet to achieve greatness")
+    local Section = StatusTab:AddSection({
+        Name = "Server"
+    })
+    StatusTab:AddTextbox({
+        Name = "Input Jobid",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(Value)
+            print(Value)
+        end	  
+    })
+    StatusTab:AddButton({
+        Name = "Join Server",
+        Callback = function()
+                  print("Teleport")
+          end    
+    })
+    StatusTab:AddToggle({
+        Name = "Auto Spam join",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    StatusTab:AddButton({
+        Name = "Copy Jobid",
+        Callback = function()
+                  print("Teleport")
+          end    
+    })
+    StatusTab:AddButton({
+        Name = "Hop Server",
+        Callback = function()
+                  print("Teleport")
+          end    
+    })
+    StatusTab:AddButton({
+        Name = "Hop Server less people",
+        Callback = function()
+                  print("Teleport")
+          end    
+    })
+
+
+    local RaceTab = Window:MakeTab({
+        Name = "Upgrade Race",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local Section = RaceTab:AddSection({
+        Name = "Main"
+    })
+    RaceTab:AddButton({
+        Name = "No Fog",
+        Callback = function()
+                  print("Teleport")
+          end    
+    })
+    RaceTab:AddToggle({
+        Name = "Auto Get Cyborg [Only Buy And Attack Law]",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddToggle({
+        Name = "Auto Get Ghoul",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddToggle({
+        Name = "Auto Get Ghoul [ Hop Find Boss ]",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddToggle({
+        Name = "Upgrade Race V2-V3",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    local Section = RaceTab:AddSection({
+        Name = "Multi Trial [ Test ]"
+    })
+    RaceTab:AddDropdown({
+        Name = "Select Player Multi",
+        Default = "1",
+        Options = {"Player 1", "Player 2", "Player 3", "Player 4", "PLayer 5"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    RaceTab:AddDropdown({
+        Name = "Select Player Multi 2",
+        Default = "1",
+        Options = {"Player 1", "Player 2", "Player 3", "Player 4", "PLayer 5"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    RaceTab:AddButton({
+        Name = "Refresh List Player",
+        Callback = function()
+                  print("Teleport")
+          end    
+    })
+    RaceTab:AddToggle({
+        Name = "Multi Trial",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddToggle({
+        Name = "Auto Reset Character",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    local Section = RaceTab:AddSection({
+        Name = "Trial V4"
+    })
+    RaceTab:AddToggle({
+        Name = "Auto Buy Gear",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddToggle({
+        Name = "Auto Finish Train Quest",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddToggle({
+        Name = "Auto Choose Gears",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddToggle({
+        Name = "Auto Get Blue Gear",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddButton({
+        Name = "Teleport Door Trial",
+        Callback = function()
+                  print("button pressed")
+          end    
+    })
+    RaceTab:AddButton({
+        Name = "Teleport Acient Clock",
+        Callback = function()
+                  print("button pressed")
+          end    
+    })
+    RaceTab:AddToggle({
+        Name = "Pull Lever",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddToggle({
+        Name = "Pull Lever [ Hop ]",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddToggle({
+        Name = "Auto Trial",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddToggle({
+        Name = "Auto Trial [ Hop ]",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddToggle({
+        Name = "Detect Players When Turn Race V3 And Auto Turn On Race V3",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    RaceTab:AddToggle({
+        Name = "Auto Kill Player When complete Trial",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+
+
+    local MicsTab = Window:MakeTab({
+        Name = "Mics",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local Section = MicsTab:AddSection({
+        Name = "Boss"
+    })
+    MicsTab:AddDropdown({
+        Name = "Select Boss",
+        Default = "1",
+        Options = {"Boss 1", "Boss 2", "Boss 3", "Boss 4", "Boss 5"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MicsTab:AddButton({
+        Name = "Refresh Boss",
+        Callback = function()
+                  print("button pressed")
+          end    
+    })
+    MicsTab:AddToggle({
+        Name = "Auto Boss",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    MicsTab:AddToggle({
+        Name = "Get Quest Boss",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    MicsTab:AddDropdown({
+        Name = "Select Mobs",
+        Default = "1",
+        Options = {"Mob 1", "Mob 2", "Mob 3", "Mob 4", "Mob 5"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MicsTab:AddButton({
+        Name = "Refresh Mobs",
+        Callback = function()
+                  print("button pressed")
+          end    
+    })
+    MicsTab:AddLabel("Mob Select :")
+    MicsTab:AddToggle({
+        Name = "Farm Select Mob",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    local Section = MicsTab:AddSection({
+        Name = "Observation haki"
+    })
+    MicsTab:AddLabel("Observation Level :0")
+    MicsTab:AddToggle({
+        Name = "Farm Observation",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+    end
+    })
+    MicsTab:AddToggle({
+        Name = "Farm Observation [ Hop ]",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    local Section = MicsTab:AddSection({
+        Name = "Farm Material"
+    })
+    MicsTab:AddDropdown({
+        Name = "Select Material",
+        Default = "1",
+        Options = {"Vampire Fang", "Fish Tail", "Gunpowder", "Mystic Droplet", "Conjured Cocoa", "Dragon Scale", "Leather", "Ectoplasm", "Mini Tusk", "Magma Ore", "Scrap Metal", "Angel Wings", "Radioactive Material", "Demonic Wisp"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    MicsTab:AddToggle({
+        Name = "Farm Material",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    local Section = MicsTab:AddSection({
+        Name = "Other"
+    })
+    MicsTab:AddToggle({
+        Name = "Trade Bones",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    MicsTab:AddToggle({
+        Name = "Auto Buy Haki Color",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    MicsTab:AddToggle({
+        Name = "Tp Safe When Have God Chalice or Fist of Darkness",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    MicsTab:AddToggle({
+        Name = "Auto Chest",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    MicsTab:AddToggle({
+        Name = "Auto Rip Indra",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    MicsTab:AddToggle({
+        Name = "Auto Spawn Rip Indra",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    MicsTab:AddToggle({
+        Name = "Auto Summon And Kill Darkbeard And Find Key Summon",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    MicsTab:AddButton({
+        Name = "Touch Buttons Spawn Rip Indra",
+        Callback = function()
+                  print("button pressed")
+          end    
+    })
+    MicsTab:AddToggle({
+        Name = "Auto Dough King",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    MicsTab:AddToggle({
+        Name = "Hop Cup",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    MicsTab:AddToggle({
+        Name = "Citizen Quest",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    MicsTab:AddToggle({
+        Name = "Auto Seabeast",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    MicsTab:AddToggle({
+        Name = "Auto PirateShip",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    local WebhookTab = Window:MakeTab({
+        Name = "Webhook",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local Section = WebhookTab:AddSection({
+        Name = "Webhook"
+    })
+    WebhookTab:AddTextbox({
+        Name = "Url Webhook",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(Value)
+            print(Value)
+        end	  
+    })
+    WebhookTab:AddToggle({
+        Name = "Webhook Store Fruit",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    WebhookTab:AddToggle({
+        Name = "Webhook Server Full Moon Or Next Night",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    WebhookTab:AddToggle({
+        Name = "Webhook Mirage",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+
+
+    local ItemTab = Window:MakeTab({
+        Name = "Get Items",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local Section = ItemTab:AddSection({
+        Name = "Soul Gitar And CDK"
+    })
+    ItemTab:AddToggle({
+        Name = "Soul Gitar",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    ItemTab:AddToggle({
+        Name = "Cursed Dual Katana",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    local Section = ItemTab:AddSection({
+        Name = "Upgrade And Farm Mastery Sword And [Gun Soon]"
+    })
+    ItemTab:AddToggle({
+        Name = "Auto Farm Mastery 600 Sword In Inventory",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    ItemTab:AddToggle({
+        Name = "Auto Upgrade Sword Inventory",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    local Section = ItemTab:AddSection({
+        Name = "Other"
+    })
+    ItemTab:AddToggle({
+        Name = "Auto Buy Legend Sword",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    ItemTab:AddToggle({
+        Name = "Auto Buy Legend Sword [ Hop ]",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    ItemTab:AddToggle({
+        Name = "Hallow Scythe",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    ItemTab:AddToggle({
+        Name = "Yama",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    ItemTab:AddToggle({
+        Name = "Tushita",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    ItemTab:AddToggle({
+        Name = "Saber Sword",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    local Section = ItemTab:AddSection({
+        Name = "Multi Toggle"
+    })
+    ItemTab:AddToggle({
+        Name = "Pole Sword",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    ItemTab:AddToggle({
+        Name = "Canvander",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    ItemTab:AddToggle({
+        Name = "Buddy Sword",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    ItemTab:AddToggle({
+        Name = "Serpent Bow",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    ItemTab:AddToggle({
+        Name = "Twin Hooks",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+
+
+    local PvpTab = Window:MakeTab({
+        Name = "PVP",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local Section = PvpTab:AddSection({
+        Name = "Main"
+    })
+    PvpTab:AddDropdown({
+        Name = "Select Player Target",
+        Default = "1",
+        Options = {"Player 1", "Player 2", "Player 3", "Player 4", "Player 5"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    PvpTab:AddDropdown({
+        Name = "Select Method Aimbot",
+        Default = "1",
+        Options = {"Select Player", "Target nearest Player", "FOV Mouse"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    PvpTab:AddSlider({
+        Name = "POV SIZE",
+        Min = 0,
+        Max = 500,
+        Default = 150,
+        Color = Color3.fromRGB(255,255,255),
+        Increment = 1,
+        ValueName = "POV SIZE",
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    PvpTab:AddButton({
+        Name = "Refresh List",
+        Callback = function()
+                  print("button pressed")
+          end    
+    })
+    PvpTab:AddToggle({
+        Name = "Esp Player",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    PvpTab:AddToggle({
+        Name = "Auto Aimbot",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+    PvpTab:AddToggle({
+        Name = "No Stun",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end
+    })
+
+    local SettingTab = Window:MakeTab({
+        Name = "Settings",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    local Section = SettingTab:AddSection({
+        Name = "Setting SeaBeast"
+    })
+    SettingTab:AddDropdown({
+        Name = "Select Weapon SeaBeast 1",
+        Default = "1",
+        Options = {"Blox Fruit", "Sword", "Melee"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill Z",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill X",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill C",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill V",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill F",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddDropdown({
+        Name = "Select Weapon SeaBeast 2",
+        Default = "1",
+        Options = {"Blox Fruit", "Sword", "Melee"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill Z",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill X",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill C",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill V",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill F",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    local Section = SettingTab:AddSection({
+        Name = "Setting Kill Player When complete Trial"
+    })
+    SettingTab:AddDropdown({
+        Name = "Select Weapon",
+        Default = "Melee",
+        Options = {"Blox Fruit", "Sword", "Melee"},
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill Z",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill X",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill C",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill V",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddToggle({
+        Name = "Use Skill F",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    local Section = SettingTab:AddSection({
+        Name = "Setting Other"
+    })
+    SettingTab:AddSlider({
+        Name = "Tween Speed",
+        Min = 0,
+        Max = 300,
+        Default = 5,
+        Color = Color3.fromRGB(255,255,255),
+        Increment = 1,
+        ValueName = "Tween Speed",
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+    SettingTab:AddSlider({
+        Name = "Delay HopServer",
+        Min = 0,
+        Max = 30,
+        Default = 5,
+        Color = Color3.fromRGB(255,255,255),
+        Increment = 1,
+        ValueName = "Delay HopServer",
+        Callback = function(Value)
+            print(Value)
+        end    
+    })
+end
+OrionLib:Init()
